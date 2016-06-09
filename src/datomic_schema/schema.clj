@@ -1,6 +1,7 @@
 (ns schema
-  (require
-    [datomic.api :as d]))
+  (:require
+    [datomic.api :as d])
+  (:import (clojure.lang Keyword)))
 
 (def attr-map
   {
