@@ -16,6 +16,16 @@ in a other place then the datomic schema!
 So the goal is to be able to create concise schema parts which you can easy read over, without limiting any of datomic
 powers
 
+# Example
+```
+(def user
+  {:user/name [:string :unique-value]
+   :user/role [:ref :many]
+   :user/whatever [<:valueType> :<optionalAttribute>]})
+   
+(builde-schema user)
+```
+
 # TODO
 * tests
 * clean up validation (super ugly working version right now)
