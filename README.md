@@ -23,7 +23,7 @@ powers
    :user/role [:ref :many]
    :user/whatever [<:valueType> :<optionalAttribute>]})
    
-(builde-schema user)
+(build-schema user)
 ```
 
 # TODO
